@@ -104,30 +104,5 @@ class UserController extends Controller
          return view('users.register_card', compact('card', 'count'));
      }
  
-     public function token(Request $request)
-     {
-         $pay_jp_secret = env('PAYJP_SECRET_KEY');
-         \Payjp\Payjp::setApiKey($pay_jp_secret);
- 
-         $user = Auth::user();
-         $customer = $user->token;
- 
-         if ($customer != "") {
-             $cu = \Payjp\Customer::retrieve($customer);
-             $delete_card = $cu->cards->retrieve($cu->cards->data[0]["id"]);
-             $delete_card->delete();
-             $cu->cards->create(array(
-                 "card" => request('payjp-token')
-             ));
-         } else {
-             $cu = \Payjp\Customer::create(array(
-                 "card" => request('payjp-token')
-             ));
-             $user->token = $cu->id;
-             $user->update();
-         }
- 
-         return to_route('mypage');
-     }
-
+  
     }
