@@ -6,6 +6,9 @@
  
      <form action="{{ route('products.store') }}" method="POST">
          @csrf
+         <form action="#" enctype='#' method=""> 
+        <input type="file" name="image">  
+        </form>
          <div class="form-group">
              <label for="product-name">商品名</label>
              <input type="text" name="name" id="product-name" class="form-control">

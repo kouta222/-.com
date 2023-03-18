@@ -56,7 +56,7 @@ return [
             'throw' => false,
         ],
 
-    ],
+   
 
 
     'admin' => [
@@ -64,6 +64,8 @@ return [
         'root' => public_path(''),
         'visibility' =>'public',
         'url' => env('APP_URL'),
+
+         ],
     ],
     /*
     |--------------------------------------------------------------------------

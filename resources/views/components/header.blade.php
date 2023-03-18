@@ -5,7 +5,7 @@
      </a>
      <form class="row g-1">
        <div class="col-auto">
-         <input class="form-control kakomon-header-search-input">
+         <input class="form-control kakomon-header-search-input" placeholder="キーワード検索">
        </div>
        <div class="col-auto">
          <button type="submit" class="btn kakomon-header-search-button"><i class="fas fa-search kakomon-header-search-icon"></i></button>
@@ -39,6 +39,13 @@
              <i class="fas fa-user mr-1"></i><label>マイページ</label>
            </a>
          </li>
+         <li class="nav-item mr-5">
+           <a class="nav-link" href="{{ route('products.create') }}">
+           <i class="bi bi-plus-circle-fill"></i><label>出品する</label>
+ 
+            </a>
+
+          </li>
          <li class="nav-item mr-5">
           <a class="nav-link" href="{{ route('mypage.favorite') }}">
             <i class="far fa-heart"></i>

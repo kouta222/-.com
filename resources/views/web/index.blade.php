@@ -1,15 +1,21 @@
 @extends('layouts.app')
 <link rel="stylesheet" href="{{ asset('/css/caousel.css' )}}">
-
- @section('content')
-
+@section('content')
 
  <div class="row">
     <div class="col-2">
       @component('components.sidebar', ['categories' => $categories, 'major_categories' => $major_categories])
      @endcomponent
      </div>
+   
+
+
      <div class="col-9">
+     <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 font-weight-normal">kakomon.com</h1>
+    <p class="lead font-weight-normal">大学生必見のサイトが今ここにある。</p>
+    <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+  </div>
      <h1>新着商品</h1>
     <div class="row">
     @foreach ($recently_products as $recently_product)
