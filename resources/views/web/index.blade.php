@@ -13,7 +13,7 @@
      <div class="col-9">
      <div class="col-md-5 p-lg-5 mx-auto my-5">
     <h1 class="display-4 font-weight-normal">kakomon.com</h1>
-    <p class="lead font-weight-normal">大学生必見のサイトが今ここにある。</p>
+    <p class="lead font-weight-normal">あなたが欲しい過去問がここにある。</p>
     <a class="btn btn-outline-secondary" href="#">Coming soon</a>
   </div>
      <h1>新着商品</h1>
