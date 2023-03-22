@@ -18,7 +18,7 @@ use App\Http\Controllers\ReviewController;
 |
 */
 
-Route::get('/',  [WebController::class, 'index']);
+Route::get('/',  [WebController::class, 'index'])->name('index');
 
 
 Route::controller(CartController::class)->group(function () {

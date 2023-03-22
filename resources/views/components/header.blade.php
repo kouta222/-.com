@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-md navbar-light shadow-sm kakomon-header-container">
    <div class="container">
-     <a class="navbar-brand" href="{{ url('/') }}">
-       {{ config('app.name', 'Laravel') }}
+     <a class="navbar-brand" href="{{ route('index') }}">
+     <img src="{{ asset('img/kakomon.com (6).png') }}" width="50" height="50" >
+
      </a>
      <form class="row g-1">
        <div class="col-auto">

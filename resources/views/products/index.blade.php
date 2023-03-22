@@ -15,9 +15,8 @@
              @endif
          </div>
          <div>
-            Sort By
-            @sortablelink('id','ID')
-            @sortablelink('price','Price')
+            
+            @sortablelink('price','値段順で並び替える')
         </div>
 
          <div class="container mt-4">

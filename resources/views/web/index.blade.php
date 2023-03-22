@@ -1,5 +1,6 @@
 @extends('layouts.app')
 <link rel="stylesheet" href="{{ asset('/css/caousel.css' )}}">
+
 @section('content')
 
  <div class="row">
@@ -11,11 +12,8 @@
 
 
      <div class="col-9">
-     <div class="col-md-5 p-lg-5 mx-auto my-5">
-    <h1 class="display-4 font-weight-normal">kakomon.com</h1>
-    <p class="lead font-weight-normal">あなたが欲しい過去問がここにある。</p>
-    <a class="btn btn-outline-secondary" href="#">Coming soon</a>
-  </div>
+     <img src="img/kakomon.com (3).png" class="waseda-photo" width="1000px" height="500px" 	>
+     <div class="col-md-5 p-lg-5 mx-auto my-5"></div>
      <h1>新着商品</h1>
     <div class="row">
     @foreach ($recently_products as $recently_product)
