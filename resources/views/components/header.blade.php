@@ -1,4 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light shadow-sm kakomon-header-container">
+<link rel="stylesheet" href="{{ asset('/css/button.css') }}">
    <div class="container">
      <a class="navbar-brand" href="{{ route('index') }}">
      <img src="{{ asset('img/kakomon.com (6).png') }}" width="100" height="50" >
@@ -40,11 +41,6 @@
              <i class="fas fa-user mr-1"></i><label>マイページ</label>
            </a>
          </li>
-         <li class="nav-item mr-5">
-           <a class="nav-link" href="{{ route('products.create') }}">
-           <i class="bi bi-plus-circle-fill"></i><label>出品する</label>
- 
-            </a>
 
           </li>
          <li class="nav-item mr-5">
@@ -57,6 +53,10 @@
              <i class="fas fa-shopping-cart"></i>
            </a>
          </li>
+         <li class="nav-item mr-5">
+           <a class="nav-link" href="{{ route('products.create') }}">
+           <button class="waseda-button"  type="button">出品する</button>
+           </a>
          @endguest
        </ul>
      </div>

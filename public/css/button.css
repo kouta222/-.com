@@ -1,0 +1,9 @@
+.waseda-button {
+    background-color: red;
+    font-family: YuGo;
+    font-weight: bold;
+    border-radius:  10px;
+    height: 30px;
+    width: 80px;
+    border: none;
+}

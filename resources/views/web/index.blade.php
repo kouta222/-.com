@@ -12,7 +12,7 @@
      <div class="col-9">
      <img src="img/kakomon.com (8).png" class="waseda-photo" width="1000px" height="500px" 	>
      <div class="col-md-5  "></div>
-
+     
      <hr>
      
      <img src="img/いらなくなった過去問を出品してみよう (1).png" class="waseda-photo" width="1000px" height="200px" 	>
