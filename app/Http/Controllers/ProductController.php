@@ -18,13 +18,13 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         if ($request->category !== null) {
-            $products = Product::where('category_id', $request->category)->paginate(15);
+            $products = Product::where('category_id', $request->category)->sortable()->paginate(15);
             $total_count = Product::where('category_id', $request->category)->count();
             $category = Category::find($request->category);
             $major_category = MajorCategory::find($category->major_category_id);
 
         } else {
-            $products = Product::paginate(15);
+            $products = Product::sortable()->paginate(15);
             $total_count = "";
             $category = null;
             $major_category = null; 
@@ -33,7 +33,7 @@ class ProductController extends Controller
          $categories = Category::all();
          $major_categories = MajorCategory::all();
 
-         return view('products.index', compact('products', 'category', 'major_category', 'categories', 'major_categories', 'total_count'));
+         return view('products.index', compact('products', 'category', 'major_category', 'categories', 'major_categories', 'total_count',));
 
     }
 

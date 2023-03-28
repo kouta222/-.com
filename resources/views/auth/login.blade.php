@@ -44,6 +44,10 @@
                      <button type="submit" class="mt-3 btn waseda-submit-button w-100">
                          ログイン
                      </button>
+
+                     <button type="submit" class="mt-3 btn waseda-submit-button w-100">
+                        <a href="{{ route('login.guest') }}">ゲストログイン</a>
+                    </button>
  
                      <a class="btn btn-link mt-3 d-flex justify-content-center waseda-login-text" href="{{ route('password.request') }}">
                          パスワードをお忘れの場合

@@ -4,13 +4,14 @@
 @section('content')
 
  <div class="row">
-    <div class="col-2">
+ <div class="col-2">
       @component('components.sidebar', ['categories' => $categories, 'major_categories' => $major_categories])
      @endcomponent
      </div>
-   
+
      <div class="col-9">
      <img src="img/kakomon.com (8).png" class="waseda-photo" width="1000px" height="500px" 	>
+    
      <div class="col-md-5  "></div>
      
      <hr>

@@ -2,7 +2,7 @@
  
  @section('content')
  <div class="row">
-    <div class="col-2">
+ <div class="col-2">
     @component('components.sidebar', ['categories' => $categories, 'major_categories' => $major_categories])
         @endcomponent
     </div>
@@ -16,7 +16,7 @@
          </div>
          <div>
             
-            @sortablelink('price','値段順で並び替える')
+            @sortablelink('price','値段順に並び替える')
         </div>
 
          <div class="container mt-4">

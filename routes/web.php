@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\WebController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,5 +54,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
+Route::get('/login/guest', [App\Http\Controllers\Auth\LoginController::class,'guestlogin'])->name('login.guest');
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -216,3 +216,8 @@
 h1 {
   margin-top: 0px;
 }
+
+.kakomon-sidebar-category-label{
+  color: pink;
+  text-underline: none;
+}
