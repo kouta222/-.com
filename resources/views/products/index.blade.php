@@ -34,7 +34,7 @@
                      <div class="row">
                          <div class="col-12">
                              <p class="kakomon-product-label mt-2">
-                                 {{$product->name}}<br>
+                                 {{$product->name}}・{{$product->genre}}<br>
                                  <label>￥{{$product->price}}</label>
                              </p>
                          </div>

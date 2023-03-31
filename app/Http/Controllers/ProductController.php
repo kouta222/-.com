@@ -61,6 +61,11 @@ class ProductController extends Controller
         $product->description = $request->input('description');
         $product->price = $request->input('price');
         $product->category_id = $request->input('category_id');
+        $product->year = $request->input('year');
+        $product->semester = $request->input('semester');
+        $product->teacher = $request->input('teacher');
+        $product->genre = $request->input('genre');
+
         $product->save();
 
         return to_route('products.index');
@@ -104,6 +109,10 @@ class ProductController extends Controller
         $product->description = $request->input('description');
         $product->price = $request->input('price');
         $product->category_id =$request->input('categoyr_id');
+        $product->year = $request->input('year');
+        $product->semester = $request->input('semester');
+        $product->teacher = $request->input('teacher');
+        $product->genre = $request->input('genre');
         $product->update();
 
         return to_route('products.index');

@@ -16,7 +16,7 @@ class CategoriesTableSeeder extends Seeder
     public function run()
     {
         $major_category_names = [
-            'ノート', '過去問', 'レジュメ'
+            'ノート', '過去問・ノート', 'レジュメ'
         ];
         $book_categories = [
             '政治経済学部', '法学部', '教育学部', '商学部',
@@ -34,7 +34,7 @@ class CategoriesTableSeeder extends Seeder
             '基幹理工学部', 'スポーツ科学部', '人間科学部'
         ];
         foreach ($major_category_names as $major_category_name) {
-            if ($major_category_name == '過去問') {
+            if ($major_category_name == '過去問・ノート') {
                 foreach ($book_categories as $book_category) {
                     Category::create([
                         'name' => $book_category,

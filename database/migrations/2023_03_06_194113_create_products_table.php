@@ -19,6 +19,10 @@ return new class extends Migration
             $table->text('description');
             $table->integer('price')->unsigned;
             $table->integer('category_id')->unsigned();
+            $table->text('year');
+            $table->text('semester');
+            $table->string('teacher');
+            $table->string('$genre');
             $table->timestamps();
         });
     }

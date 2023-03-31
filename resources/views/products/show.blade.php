@@ -14,11 +14,21 @@
          <div class="col">
              <div class="d-flex flex-column">
                  <h1 class="">
-                     {{$product->name}}
+                     {{$product->name}}・{{$product->genre}}
                  </h1>
                  <p class="">
+                    <strong>説明文</strong><br>
                      {{$product->description}}
                  </p>
+                 <strong>年度</strong>
+                 <p>{{$product->year}}</P><br>
+                 <strong>学期</strong>
+                 <p>{{$product->semester}}</P><br>
+                 <strong>教授名</strong>
+                 <p>{{$product->teacher}}</P><br>
+                
+                 
+                 
                  <hr>
                  <p class="d-flex align-items-end">
                      ￥{{$product->price}}(税込)
