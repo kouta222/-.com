@@ -23,10 +23,12 @@
          <!-- Authentication Links -->
          @guest
          <li class="nav-item mr-5">
-           <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+          <a class="nav-link" href="{{ route('login.guest') }}">ゲストログイン</a>
+         </li>
+           <a class="nav-link" href="{{ route('register') }}">会員登録</a>
          </li>
          <li class="nav-item mr-5">
-           <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+           <a class="nav-link" href="{{ route('login') }}">ログイン</a>
          </li>
          <hr>
          <li class="nav-item mr-5">
