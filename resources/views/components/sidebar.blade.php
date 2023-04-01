@@ -9,18 +9,18 @@
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         
-      //localhostになっている。
-      <a href=https://kakomon258.herokuapp.com/public/products?category=1>政治経済学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/public/products?category=2>法学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/public/products?category=3>教育学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/public/products?category=4>商学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/public/products?category=5>社会科学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/public/products?category=6>国際教養学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/public/products?category=7>創造理工学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/public/products?category=8>先進理工学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/public/products?category=9>基幹理工学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/public/products?category=10>スポーツ科学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/public/products?category=11>人間科学部</a><br>
+    
+      <a href=https://kakomon258.herokuapp.com/products?category=1>政治経済学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=2>法学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=3>教育学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=4>商学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=5>社会科学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=6>国際教養学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=7>創造理工学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=8>先進理工学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=9>基幹理工学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=10>スポーツ科学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=11>人間科学部</a><br>
 
       </div>
     </div>
