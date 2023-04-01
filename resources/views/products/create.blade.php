@@ -3,7 +3,11 @@
  @section('content')
  <div class="container">
      <h1>新しい商品を追加</h1>
- 
+     <form action="{{ route('products.store') }}" method="POST">
+     @csrf
+     <form action="#" enctype='#' method=""> 
+        <input type="file" name="image">  
+        </form>
     
          <div class="form-group">
              <label for="product-name">商品名</label>
@@ -25,10 +29,10 @@
                  @endforeach
              </select>
          </div>
-         //以下修正
+         
          <div class="form-group">
              <label for="teacher">教授名</label>
-             <input type="text" name="name" id="teacher-name" class="form-control">
+             <input type="text" name="teacher" id="teacher-name" class="form-control">
          </div>
 
 

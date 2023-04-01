@@ -26,7 +26,11 @@ Route::controller(CartController::class)->group(function () {
     Route::get('users/carts', 'index')->name('carts.index');
     Route::post('users/carts', 'store')->name('carts.store');
     Route::delete('users/carts','destroy')->name('carts.destroy');
+    Route::get('users/mypage/register_card', 'register_card')->name('mypage.register_card');
+    Route::post('users/mypage/token', 'token')->name('mypage.token');
 });
+// 後略
+
 
 Route::controller(UserController::class)->group(function () {
     Route::get('users/mypage', 'mypage')->name('mypage');

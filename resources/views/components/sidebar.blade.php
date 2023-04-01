@@ -32,6 +32,7 @@
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
+        comming soon......
       </div>
     </div>
   </div>
@@ -43,6 +44,7 @@
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
+        <a href=https://docs.google.com/presentation/d/1J6VRqUCwpvSDDeOv_-GYO3TisWCHAlgxDEBylXvWMmc/edit?usp=sharing>説明スライド</a>
       </div>
     </div>
   </div>
