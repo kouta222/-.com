@@ -11,7 +11,8 @@
 URL：：https://kakomon258.herokuapp.com/　　
 
 <br>
-ヘッダーにあるゲストログインを押せば、会員登録なしでもログインが可能です。
+ヘッダーにあるゲストログインを押せば、会員登録なしでもログインが可能です。<br>
+パソコンでの使用を前提にしています。
 
 ## 何ができるのか
 過去問を持っている人が出品をして、欲しい人が購入することができます。
@@ -30,7 +31,8 @@ HTML/CSS、Boostrap<br>
 javascript<br><br>
 
 バックエンド<br>
-PHP、laravel<br><br>
+PHP<br>
+Laravel Framework 9.52.4<br>
 
 インフラ・開発環境<br>
 MySQL、github、heroku<br><br>
@@ -48,8 +50,9 @@ MySQL、github、heroku<br><br>
 ・ソート機能<br>
 ・お気に入り機能<br>
 ・検索機能<br>
+・注文履歴機能<br>
 
 ## 今後行うこと
 
-AWSとJAVAを学習していきたいです。
+AWSとJAVAを学習していき、新しいアプリを作りたいです。
 
