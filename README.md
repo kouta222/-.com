@@ -25,6 +25,16 @@ URL：：https://kakomon258.herokuapp.com/　　
 
 
 ## 使用技術
+フロントエンド<br>
+HTML/CSS、Boostrap<br>
+javascript<br><br>
+
+バックエンド<br>
+PHP、laravel<br><br>
+
+インフラ・開発環境<br>
+MySQL、github、heroku<br><br>
+
 ## 機能一覧
 ・ユーザー登録、ログイン機能<br>
 
@@ -39,6 +49,7 @@ URL：：https://kakomon258.herokuapp.com/　　
 ・お気に入り機能<br>
 ・検索機能<br>
 
-## License
+## 今後行うこと
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+AWSとJAVAを学習していきたいです。
+
