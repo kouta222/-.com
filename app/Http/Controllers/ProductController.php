@@ -5,8 +5,9 @@ use App\Models\Product;
 use App\Models\Category;
 use App\Models\MajorCategory;
 use App\Http\Controllers\ReviewController;
-
+use Encore\Admin\Grid\Filter\Like;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
@@ -18,7 +19,7 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         if ($request->category !== null) {
-            $products = Product::where('category_id', $request->category)->sortable()->paginate(15);
+            $products = Product::where('category_id', $request->category)->sortable()->paginate(10);
             $total_count = Product::where('category_id', $request->category)->count();
             $category = Category::find($request->category);
             $major_category = MajorCategory::find($category->major_category_id);
@@ -130,4 +131,13 @@ class ProductController extends Controller
   
          return to_route('web.index');
     }
-}
+
+    public function favorite(Product $product)
+    {
+        Auth::user()->togglefavorite($product);
+
+        return back();
+    }
+
+
+ }

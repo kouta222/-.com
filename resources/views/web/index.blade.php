@@ -5,7 +5,7 @@
 
  <div class="row">
  <div class="col-2">
-      @component('components.sidebar', ['categories' => $categories, 'major_categories' => $major_categories])
+      @component('components.sidebar')
      @endcomponent
      </div>
 

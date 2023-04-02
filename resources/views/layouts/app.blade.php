@@ -28,6 +28,9 @@
             @yield('content')
         </main>
 
+        @component('components.footer')
+        @endcomponent
+
             
     </div>
 </body>

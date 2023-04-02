@@ -65,28 +65,29 @@
             買い物を続ける
             </a>
             @if ($total > 0)
-            <div class="btn kakomon-submit-button" date-bs-toggle="modal" data-bs-target="#buy-confirm-modal">購入を確定する</div>
+            <div class="btn kakomon-submit-button" data-bs-toggle="modal" data-bs-target="#buy-confirm-modal">購入を確定する</div>
             @else
             <div class="btn kakomon-submit-button disabled" data-bs-toggle="modal" data-bs-target="#buy-confirm-modal">購入を確定する</div>
             @endif
-            <div class="modal fade" id="buy-cofirm-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dislog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">購入を確定しますか？</h5>
-                            <button type="button" class="close" date-bs-dismiss="modal" aria-label="閉じる">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>   
-                    </div class="modal-footer">
-                    <button type="button" class="btn kakomon-favorite-button border-dark text-dark" date-bs-dismiss="modal">閉じる</button>
-                    <button type="submit" class="btn kakomon-submit-button">購入</button>
-                </div>          
-            </div>
-            </div>          
-            </div>
 
-        </form>
-        </div>
+            <div class="modal fade" id="buy-confirm-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                 <div class="modal-dialog">
+                     <div class="modal-content">
+                         <div class="modal-header">
+                             <h5 class="modal-title" id="staticBackdropLabel">購入を確定しますか？</h5>
+                             <button type="button" class="close" data-bs-dismiss="modal" aria-label="閉じる">
+                                 <span aria-hidden="true">&times;</span>
+                             </button>
+                         </div>
+                         <div class="modal-footer">
+                             <button type="button" class="btn kakomon-favorite-button border-dark text-dark" data-bs-dismiss="modal">閉じる</button>
+                             <button type="submit" class="btn kakomon-submit-button">購入</button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+     </form>
+    </div>
  </div>
  @endsection

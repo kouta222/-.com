@@ -1,4 +1,5 @@
 <div class="container">
+<link rel="stylesheet" href="{{ asset('/css/button.css') }}">
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
@@ -8,11 +9,9 @@
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        
-    
       <a href=https://kakomon258.herokuapp.com/products?category=1>政治経済学部</a><br>
       <a href=https://kakomon258.herokuapp.com/products?category=2>法学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/products?category=3>教育学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=3>教育学部</a><br>   
       <a href=https://kakomon258.herokuapp.com/products?category=4>商学部</a><br>
       <a href=https://kakomon258.herokuapp.com/products?category=5>社会科学部</a><br>
       <a href=https://kakomon258.herokuapp.com/products?category=6>国際教養学部</a><br>
@@ -28,12 +27,17 @@
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        <strong>使い方</strong>
+        <strong>便利機能</strong>
+
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        comming soon......
+      <a href="https://kakomon258.herokuapp.com/products/create">出品する</a><br>
+        <a href="https://kakomon258.herokuapp.com/users/carts">購入する</a><br>
+        <a href="https://kakomon258.herokuapp.com/users/mypage/favorite">お気に入りを見る</a><br>
+        <a href="https://kakomon258.herokuapp.com/users/mypage/edit">会員情報の編集</a><br>
+        <a href="https://forms.gle/43FbQRbZHK5iuA3N9">お問合わせ</a><br>
       </div>
     </div>
   </div>
