@@ -63,3 +63,7 @@ Route::get('/login/guest', [App\Http\Controllers\Auth\LoginController::class,'gu
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+?>

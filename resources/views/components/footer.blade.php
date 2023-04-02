@@ -13,8 +13,8 @@
     <ul class="footer-menu">
       <li class="footer-menu-item">
         <ul class="footer-menu">
-          <li class="footer-item"><a href="" class="footer-sub-link">サイトマップ</a></li>
-          <li class="footer-item"><a href="#" class="footer-sub-link">このサイトの使い方について</a></li>
+        <li class="footer-item"><a href="" class="footer-sub-link">サイトマップ comming soon</a></li>
+        <li class="footer-item"><a href="#" class="footer-sub-link">使い方について comming soon</a></li>
           <li class="footer-item"><a href="https://docs.google.com/document/d/1h7t3MtqFBvA84UoVE3RgS0ue-dkz_XBdwFpsuk7e5oQ/edit?usp=sharing" class="footer-sub-link">このサイトのビジネスプラン</a></li>
         
         </ul>
@@ -22,7 +22,7 @@
       <li class="footer-menu-item">
         <ul class="footer-menu">
           <li class="footer-item"><a href="https://forms.gle/1o77h7XAkjp3FqWX8" class="footer-sub-link">広告掲載について</a></li>
-          <li class="footer-item"><a href="#" class="footer-sub-link">開発者への連絡</a></li>
+          <li class="footer-item"><a href="https://docs.google.com/document/d/1HWkKtz6zk2KtmyFQy6Tnnxo-dpZMasLl8njqveEC_fc/edit?usp=sharing" class="footer-sub-link">開発者への連絡</a></li>
 
         </ul>
       </li>
