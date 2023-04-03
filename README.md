@@ -35,7 +35,7 @@ PHP<br>
 Laravel Framework 9.52.4<br>
 
 インフラ・開発環境<br>
-MySQL、github、heroku<br><br>
+MySQL、github、heroku、xampp<br><br>
 
 ## 機能一覧
 ・ユーザー登録、ログイン機能<br>
