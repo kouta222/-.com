@@ -50,6 +50,7 @@ Route::post('reviews', [ReviewController::class, 'store'])->name('reviews.store'
 Route::get('products/{product}/favorite', [ProductController::class, 'favorite'])->name('products.favorite');
 Route::get('products/{product}/favorite',[ProductController::class, 'favorite'])->name('products.favorite');
 Route::resource('products', ProductController::class)->middleware(['auth', 'verified']);
+Route::post('products/search',[ProductController::class,'search'])->name('products.search');
 Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

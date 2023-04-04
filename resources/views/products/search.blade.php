@@ -3,20 +3,18 @@
  @section('content')
  <div class="row">
  <div class="col-2">
-    @component('components.sidebar', ['categories' => $categories, 'major_categories' => $major_categories])
+    @component('components.sidebar')
         @endcomponent
     </div>
 
      <div class="col-9">
         <div class="container">
-            @if ($category !== null)
+            @csrf
             <a href="{{ route('products.index') }}">トップ</a> >
-                 <h1>検索結果</h1>
-             @endif
+                 <h1>{{$keyword}}の検索結果 </h1>
          </div>
          <div>
             
-            @sortablelink('price','値段順に並び替える')
         </div>
 
          <div class="container mt-4">
@@ -34,7 +32,7 @@
                      <div class="row">
                          <div class="col-12">
                              <p class="kakomon-product-label mt-2">
-                                 {{$product->name}}・{{$product->genre}}<br>
+                                 {{$product->name}}・{{$product->teacher}}<br>
                                  <label>￥{{$product->price}}</label>
                              </p>
                          </div>
@@ -43,7 +41,6 @@
                  @endforeach
              </div>
          </div>
-         {{ $products->appends(request()->query())->links() }}
      </div>
  </div>
  @endsection

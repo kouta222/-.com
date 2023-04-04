@@ -139,5 +139,30 @@ class ProductController extends Controller
         return back();
     }
 
+    public function search (Request $request){
+        $keyword = $request->input('keyword');
+
+        $query = Product::query();
+
+        if(!empty($keyword)) {
+            $query->where('name', 'LIKE', "%{$keyword}%")
+                ->orWhere('teacher', 'LIKE', "%{$keyword}%");
+        }
+        $products = $query->get();
+
+     
+
+        return view('products.search',compact('keyword','products',));
+
+    }
+    private function escape(string $value)
+    {
+        return str_replace(
+            ['\\', '%', '_'],
+            ['\\\\', '\\%', '\\_'],
+            $value
+        );
+    }
+
 
  }

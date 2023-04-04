@@ -5,9 +5,10 @@
      <img src="{{ asset('img/kakomon.com (6).png') }}" width="100" height="50" >
 
      </a>
-     <form class="row g-1">
+     <form class="row g-1" method="POST" action="{{ route('products.search')}}">
+      @csrf
        <div class="col-auto">
-         <input type="search" input class="form-control kakomon-header-search-input" name="search" value="{{request('serach')}}" placeholder="キーワードを入力" >
+         <input type="text" name="keyword" input class="form-control kakomon-header-search-input" placeholder="授業名・教授名を入力"  >
        </div>
        <div class="col-auto">
          <button type="submit" value="検索" class="btn kakomon-header-search-button"><i class="fas fa-search kakomon-header-search-icon"></i></button>
