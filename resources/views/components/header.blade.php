@@ -65,10 +65,12 @@
            </a>
          </li>
          <li class="nav-item mr-5">
-           <a class="nav-link" href="{{ route('products.create') }}">
-           <button class="waseda-button"  type="button">出品する</button>
+         <button type="button" class="btn btn-danger" href="{{ route('products.create') }}">出品する</button>
+
            </a>
           </li>
+
+
          @endguest
        </ul>
      </div>
