@@ -1,10 +1,21 @@
 <nav class="navbar navbar-expand-md navbar-light shadow-sm kakomon-header-container">
 <link rel="stylesheet" href="{{ asset('\css\button.css') }}">
    <div class="container" >
-     <a class="navbar-brand" href="{{ route('index') }}">
-     <img src="{{ asset('img/kakomon.com (6).png') }}" width="100" height="50" >
 
-     </a>
+   <div class="dropdown">
+       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+       </button>
+         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+           <li><a class="dropdown-item" href="#">Action</a></li>
+           <li><a class="dropdown-item" href="#">Another action</a></li>
+           <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
+     <a class="navbar-brand" href="{{ route('index') }}">
+       <img class="img" src="{{ asset('img/kakomon.com (6).png') }}" width="100" height="50" >
+</a>
+
      <form class="row g-1" method="POST" action="{{ route('products.search')}}">
       @csrf
        <div class="col-auto">
@@ -14,13 +25,12 @@
          <button type="submit" value="検索" class="btn kakomon-header-search-button"><i class="fas fa-search kakomon-header-search-icon"></i></button>
        </div>
      </form>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-       <span class="navbar-toggler-icon"></span>
-     </button>
+
+    
 
 
  
- 
+     
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
        <!-- Right Side Of Navbar -->
        <ul class="navbar-nav ms-auto mr-5 mt-2">
@@ -66,7 +76,7 @@
          </li>
          <li class="nav-item mr-5">
          <button type="button" class="btn btn-danger" href="{{ route('products.create') }}">出品する</button>
-
+          
            </a>
           </li>
 

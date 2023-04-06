@@ -63,6 +63,79 @@ header{
 
 }
 
+
 .footer-copyright{
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+ .navbar-brand{
+ 
+    display: inline-block;
+  }
+ 
+  .dropdown {
+    display: inline-block;
+ 
+    }
+
+  .navbar-brand > img{
+    
+    display: inline-block;
+    height: 75px;
+    width: 150px;
+  }
+ 
+
+  
+
+  .nav-link{
+    display: none;
+  }
+
+  
+  .col-auto{
+  display: none;
+  }
+
+
+ .waseda-b {
+  display: none;
+ }
+
+ .nav-link {
+  display: none;
+ }
+
+ .nav-item {
+  display: none;
+ }
+
+ .recruitment-contact{
+  display: none;
+ }
+
+ .sns-wrap-title {
+  display: none;
+ }
+
+ .footer-sns-buttons {
+  margin-top: 10px;
+ }
+
+ .footer-menu{
+  display: block;
+ }
+ .footer-menu-item{
+  display: block;
+ }
+
+}
+ 
+  
+
+  @media screen and (min-width: 768px) {
+    .dropdown{
+      display: none;
+    }
+  }

@@ -81,10 +81,24 @@ body {
   }
 }
 
+.waseda-photo {
+  width:1000px; 
+  height:500px; 	
+}
+
    .waseda {
   padding-left: 10px;
 }
 
 h1 {
   margin-bottom: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+  .waseda-photo {
+    width:50px;
+    max-width: 100%;
+    height: auto;
+  
+  }
 }

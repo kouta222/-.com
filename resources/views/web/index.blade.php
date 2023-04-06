@@ -1,5 +1,5 @@
 @extends('layouts.app')
-<link rel="stylesheet" href="{{ asset('/css/caousel.css' )}}">
+
 
 @section('content')
 
@@ -10,13 +10,44 @@
      </div>
 
      <div class="col-9">
-     <img src="img/kakomon.com (8).png" class="waseda-photo" width="1000px" height="500px" 	>
+     <img src="img/kakomon.com (8).png" class="waseda-photo" >
     
      <div class="col-md-5  "></div>
      
-     <hr>
-     
-     <img src="img/いらなくなった過去問を出品してみよう (1).png" class="waseda-photo" width="1000px" height="200px" 	>
+     <hr> 
+     <a href="https://kakomon258.herokuapp.com/products/create" >
+     <img src="img/いらなくなった過去問を出品してみよう (1).png"class="waseda-photo" width="1000px" height="200px">
+     </a>
+
+
+     <div class="categories-collection">
+      <h1>学部一覧</h1>
+      <div class="categories-collection1">
+     <a href=https://kakomon258.herokuapp.com/products?category=1>政治経済学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=2>法学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=3>教育学部</a><br>  
+     </div> 
+      <div class="categories-collection2">
+
+      <a href=https://kakomon258.herokuapp.com/products?category=4>商学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=5>社会科学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=6>国際教養学部</a><br>
+</div>
+<div class="categories-collection3">
+
+      <a href=https://kakomon258.herokuapp.com/products?category=7>創造理工学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=8>先進理工学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=9>基幹理工学部</a><br>
+</div>
+<div class="categories-collection4">
+
+      <a href=https://kakomon258.herokuapp.com/products?category=10>スポーツ科学部</a><br>
+      <a href=https://kakomon258.herokuapp.com/products?category=11>人間科学部</a><br>
+      <div>
+
+      </div>
+
+
      <h1>新着商品</h1>
     <div class="row">
     @foreach ($recently_products as $recently_product)
