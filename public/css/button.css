@@ -69,3 +69,26 @@ header{
 }
 
 
+/* レスポンシブデザイン */
+@media screen and (max-width: 768px) { 
+
+.recruitment-contact{
+  display: none;
+}
+
+.recruitment-contact-txt{
+  display: none;
+}
+
+.footer-menu {
+  display: block;
+}
+.footer-menu-item {
+  display: block;
+}
+
+.sns-wrap {
+  margin-top: 20px;
+}
+
+}

@@ -11,7 +11,9 @@
          <img src="img/kakomon.com (8).png" class="waseda-photo" width="1000px" height="500px" 	>
         
         <hr> 
-         <img src="img/いらなくなった過去問を出品してみよう (1).png" width="1000px" height="200px">
+         <img src="img/いらなくなった過去問を出品してみよう (1).png" class="picpic" width="1000px" height="200px">
+
+         <img src="{{ asset('/css/img/いらなくなった過去問を出品してみよう (2).png') }}" class="waseda-pic"width="1000px" height="200px">
 
          <div class="categories"> 
              <h1 class=reproducts>学部一覧</h1> 
@@ -63,6 +65,32 @@
             </div>
         @endforeach
         </div>
+
+        <!-- レスポンシブデザイン -->
+
+        <div class="row">
+        @foreach ($recently_products as $recently_product)
+            <div class="col-4">
+                <a href="{{ route('products.show', $recently_product) }}">
+                    @if ($recently_product->image !== "")
+                    <img src="{{ asset($recently_product->image) }}" class="img-thumbnail">
+                    @else
+                    <img src="{{ asset('img/dummy.png')}}" class="img-thumbnail">
+                    @endif
+                </a>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="samuraimart-product-label mt-2">
+                            {{ $recently_product->name }}<br>
+                            <label>￥{{ $recently_product->price }}</label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+        </div>
+
+        <!-- レスポンシブデザイン終り -->
 
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                <ol class="carousel-indicators">

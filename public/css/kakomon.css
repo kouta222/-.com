@@ -254,6 +254,7 @@ footer {
 } 
 .categories-collection2 { 
   display: none; 
+  margin-left: 20px;
 } 
 .categories-collection3 { 
   display: none; 
@@ -270,8 +271,25 @@ footer {
   display: none;
 }
 
+.waseda-pic{
+  display: none;
+}
 
+.picpic {
+display: inline-block;}
 
+.col-3 {
+  display: inline-block;
+} 
+
+.col-4 {
+  display: none;
+}
+
+carouselExampleCaptions{
+  width: auto;
+  height: 200px;
+}
 
 
 @media screen and (max-width: 768px) { 
@@ -282,9 +300,17 @@ footer {
    
   } 
 
+  .waseda-pic{
+    display: inline-block;
+  }
+
   .col-9 >img {
     width: 100%; 
     height: auto; 
+  }
+
+  .col-3 {
+    display: none;
   }
 
   .reproducts {
@@ -323,6 +349,10 @@ footer {
   display: none;
 }
 
+.col-4 {
+  display: inline-block;
+}
+
 /* header */
 .navbar-brand {
   display: inline-block;
@@ -334,6 +364,10 @@ footer {
 
 .dropdown {
   display: inline-block;
+}
+
+.picpic {
+  display: none;
 }
 
 

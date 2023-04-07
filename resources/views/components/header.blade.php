@@ -11,6 +11,8 @@
            <li><a class="dropdown-item" href="{{ route('login.guest') }}">ゲストログイン</a></li> 
            <li><a class="dropdown-item" href="{{ route('carts.index') }}">カートの中を見る</a></li> 
            <li><a class="dropdown-item" href="{{ route('products.create') }}">出品する</a></li> 
+           <li><a class="dropdown-item" href="https://kakomon258.herokuapp.com/users/mypage/favorite">お気に入りを見る</a></li> 
+           <li><a class="dropdown-item" href="https://forms.gle/43FbQRbZHK5iuA3N9">お問い合わせ</a></li> 
          </ul> 
      </div>
  
