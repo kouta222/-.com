@@ -1,20 +1,23 @@
 <nav class="navbar navbar-expand-md navbar-light shadow-sm kakomon-header-container">
 <link rel="stylesheet" href="{{ asset('\css\button.css') }}">
-   <div class="container" >
+<link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
 
-   <div class="dropdown">
-       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-       </button>
-         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-           <li><a class="dropdown-item" href="#">Action</a></li>
-           <li><a class="dropdown-item" href="#">Another action</a></li>
-           <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
+   <div class="container">
+
+   <div class="dropdown"> 
+       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> 
+      </button> 
+         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"> 
+           <li><a class="dropdown-item" href="{{ route('login.guest') }}">ゲストログイン</a></li> 
+           <li><a class="dropdown-item" href="{{ route('carts.index') }}">カートの中を見る</a></li> 
+           <li><a class="dropdown-item" href="{{ route('products.create') }}">出品する</a></li> 
+         </ul> 
+     </div>
+ 
 
      <a class="navbar-brand" href="{{ route('index') }}">
-       <img class="img" src="{{ asset('img/kakomon.com (6).png') }}" width="100" height="50" >
-</a>
+        <img src="{{ asset('img/kakomon.com (6).png') }}" width="100" height="50" >
+     </a>
 
      <form class="row g-1" method="POST" action="{{ route('products.search')}}">
       @csrf

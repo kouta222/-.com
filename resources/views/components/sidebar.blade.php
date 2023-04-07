@@ -1,5 +1,7 @@
 <div class="container">
 <link rel="stylesheet" href="{{ asset('/css/button.css') }}">
+<link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
+
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">

@@ -1,123 +1,115 @@
 @extends('layouts.app')
 
-
 @section('content')
+  <div class="row">
+        <div class="col-2">
+           @component('components.sidebar')
+           @endcomponent
+         </div>
 
- <div class="row">
- <div class="col-2">
-      @component('components.sidebar')
-     @endcomponent
-     </div>
+         <div class="col-9">
+         <img src="img/kakomon.com (8).png" class="waseda-photo" width="1000px" height="500px" 	>
+        
+        <hr> 
+         <img src="img/いらなくなった過去問を出品してみよう (1).png" width="1000px" height="200px">
 
-     <div class="col-9">
-     <img src="img/kakomon.com (8).png" class="waseda-photo" >
-    
-     <div class="col-md-5  "></div>
-     
-     <hr> 
-     <a href="https://kakomon258.herokuapp.com/products/create" >
-     <img src="img/いらなくなった過去問を出品してみよう (1).png"class="waseda-photo" width="1000px" height="200px">
-     </a>
+         <div class="categories"> 
+             <h1 class=reproducts>学部一覧</h1> 
+            <div class="col-12">
+                  <div class="categories-collection1"> 
+                         <a href=https://kakomon258.herokuapp.com/products?category=1>政治経済学部</a><br> 
+                         <a href=https://kakomon258.herokuapp.com/products?category=2>法学部</a><br> 
+                         <a href=https://kakomon258.herokuapp.com/products?category=3>教育学部</a><br>   
+                   </div>  
 
+                  <div class="categories-collection2"> 
+                        <a href=https://kakomon258.herokuapp.com/products?category=4>商学部</a><br> 
+                        <a href=https://kakomon258.herokuapp.com/products?category=5>社会科学部</a><br> 
+                        <a href=https://kakomon258.herokuapp.com/products?category=6>国際教養学部</a><br> 
+                   </div> 
 
-     <div class="categories-collection">
-      <h1>学部一覧</h1>
-      <div class="categories-collection1">
-     <a href=https://kakomon258.herokuapp.com/products?category=1>政治経済学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/products?category=2>法学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/products?category=3>教育学部</a><br>  
-     </div> 
-      <div class="categories-collection2">
+                  <div class="categories-collection3"> 
+                       <a href=https://kakomon258.herokuapp.com/products?category=7>創造理工学部</a><br> 
+                      <a href=https://kakomon258.herokuapp.com/products?category=8>先進理工学部</a><br> 
+                       <a href=https://kakomon258.herokuapp.com/products?category=9>基幹理工学部</a><br> 
+                   </div> 
 
-      <a href=https://kakomon258.herokuapp.com/products?category=4>商学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/products?category=5>社会科学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/products?category=6>国際教養学部</a><br>
-</div>
-<div class="categories-collection3">
+                  <div class="categories-collection4"> 
+                      <a href=https://kakomon258.herokuapp.com/products?category=10>スポーツ科学部</a><br> 
+                      <a href=https://kakomon258.herokuapp.com/products?category=11>人間科学部</a><br> 
+                   <div> 
+              </div>
+         </div>
 
-      <a href=https://kakomon258.herokuapp.com/products?category=7>創造理工学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/products?category=8>先進理工学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/products?category=9>基幹理工学部</a><br>
-</div>
-<div class="categories-collection4">
+        <h1>新着商品</h1>
+        <div class="row">
+        @foreach ($recently_products as $recently_product)
+            <div class="col-3">
+                <a href="{{ route('products.show', $recently_product) }}">
+                    @if ($recently_product->image !== "")
+                    <img src="{{ asset($recently_product->image) }}" class="img-thumbnail">
+                    @else
+                    <img src="{{ asset('img/dummy.png')}}" class="img-thumbnail">
+                    @endif
+                </a>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="samuraimart-product-label mt-2">
+                            {{ $recently_product->name }}<br>
+                            <label>￥{{ $recently_product->price }}</label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+        </div>
 
-      <a href=https://kakomon258.herokuapp.com/products?category=10>スポーツ科学部</a><br>
-      <a href=https://kakomon258.herokuapp.com/products?category=11>人間科学部</a><br>
-      <div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+               <ol class="carousel-indicators">
+                     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+              </ol>
 
-      </div>
+               <div class="carousel-inner">
 
+                    <div class="carousel-item active">
 
-     <h1>新着商品</h1>
-    <div class="row">
-    @foreach ($recently_products as $recently_product)
-             <div class="col-3">
-    <a href="{{ route('products.show', $recently_product) }}">
-                     @if ($recently_product->image !== "")
-                     <img src="{{ asset($recently_product->image) }}" class="img-thumbnail">
-                     @else
-                     <img src="{{ asset('img/dummy.png')}}" class="img-thumbnail">
-                     @endif
-                 </a>
-                 <div class="row">
-                     <div class="col-12">
-                         <p class="samuraimart-product-label mt-2">
-                             {{ $recently_product->name }}<br>
-                             <label>￥{{ $recently_product->price }}</label>
-                         </p>
-                     </div>
-                 </div>
-             </div>
-             @endforeach
-
-
- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-<ol class="carousel-indicators">
-  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-</ol>
-
-<div class="carousel-inner">
-
-  <div class="carousel-item active">
-
-    <img src="img/image.jpg" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block">
+                          <img src="img/image.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
       
-      <h5>First slide label</h5>
+                                <h5></h5>
 
-    </div>
-  </div>
+                    </div>
+                 </div>
+          </div>
 
-  <div class="carousel-item">
-    <img src="img/image.jpg" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block">
-    </div>
-  </div>
+                  <div class="carousel-item">
+                          <img src="img/image.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                         </div>
+                    </div>
 
-  <div class="carousel-item">
-    <img src="img/image.jpg" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block">
+                  <div class="carousel-item">
+                         <img src="img/image.jpg" class="d-block w-100" alt="...">
+                       <div class="carousel-caption d-none d-md-block">
     
+                         </div>
+                    
+
+
+               <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                </a>
+
+           </div>
     </div>
-  </div>
-
 </div>
-
-<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</a>
-
-<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</a>
-
-</div>
-
-
-
-
 @endsection
+

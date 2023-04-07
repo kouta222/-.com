@@ -18,6 +18,8 @@
     <script src="https://kit.fontawesome.com/cfee941e8c.js" crossorigin="anonymous"></script>
       <!-- Styles -->
       <link href="{{ asset('css/kakomon.css') }}" rel="stylesheet">
+      <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
@@ -31,7 +33,6 @@
         @component('components.footer')
         @endcomponent
 
-            
     </div>
 </body>
 </html>

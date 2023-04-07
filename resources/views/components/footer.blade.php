@@ -1,6 +1,7 @@
 
 
 <link rel="stylesheet" href="{{ asset('/css/button.css') }}">
+<link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
 
 <hr>
 <footer id="footer">
