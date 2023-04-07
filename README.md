@@ -41,6 +41,8 @@ MySQL、github、heroku、xampp<br><br>
 PHPunit<br><br>
 
 ## 機能一覧
+・レスポンシブデザイン<br>
+
 ・ユーザー登録、ログイン機能<br>
 
 ・出品機能(herokuではテーブルを更新できないので、localでのみ出品できます。）<br>
@@ -55,7 +57,6 @@ PHPunit<br><br>
 ・検索機能<br>
 ・注文履歴機能<br><br>
 
-レスポンシブデザインも作成中です<br>
 
 ## 今後行うこと
 
