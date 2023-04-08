@@ -1,10 +1,14 @@
+<head>   
+  <link rel="stylesheet" href="{{ asset('/css/button.css') }}">
+</head>
+
 @extends('layouts.app')
  
  @section('content')
  <div class="row">
  <div class="col-2">
     @component('components.sidebar', ['categories' => $categories, 'major_categories' => $major_categories])
-        @endcomponent
+   @endcomponent
 
     
     </div>
@@ -42,6 +46,7 @@
                          </div>
                      </div>
                  </div>
+               </div>
                  @endforeach
              </div>
          </div>

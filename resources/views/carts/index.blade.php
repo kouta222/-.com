@@ -9,10 +9,14 @@
              <div class="offset-8 col-4">
                  <div class="row">
                      <div class="col-6">
-                         <h2>数量</h2>
+                        <div class="number">
+                           <h2>数量</h2>
+                        </div>
                      </div>
                      <div class="col-6">
+                           <div class="number">
                          <h2>合計</h2>
+                          </div>
                      </div>
                  </div>
              </div>
@@ -31,13 +35,19 @@
                      @endif                 </a>
              </div>
              <div class="col-md-6 mt-4">
-                 <h3 class="mt-4">{{$product->name}}</h3>
+                 <h3 class="mt-4">
+                 <div class="number-pro">教科名：</div>
+                    {{$product->name}}</h3>
              </div>
              <div class="col-md-2">
-                 <h3 class="w-100 mt-4">{{$product->qty}}</h3>
+                 <h3 class="w-100 mt-4">
+                    <div class="number-pro">  数量：</div>
+                    {{$product->qty}}</h3>
              </div>
              <div class="col-md-2">
-                 <h3 class="w-100 mt-4">￥{{$product->qty * $product->price}}</h3>
+                 <h3 class="w-100 mt-4">
+                 <div class="number-pro">  値段：</div>
+                    ￥{{$product->qty * $product->price}}</h3>
              </div>
              @endforeach
          </div>

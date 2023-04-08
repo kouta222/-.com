@@ -153,6 +153,8 @@ class ProductController extends Controller
      
 
         return view('products.search',compact('keyword','products',));
+        return view('web.index',compact('keyword','products',));
+
 
     }
     private function escape(string $value)

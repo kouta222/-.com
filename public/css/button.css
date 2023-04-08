@@ -68,9 +68,19 @@ header{
     text-align: center;
 }
 
+.home-button{
+  margin-top: 20px;
+  text-align: center;
+}
+
 
 /* レスポンシブデザイン */
 @media screen and (max-width: 768px) { 
+
+.navbar-brand >img  {
+  height: 75px;
+  width: 150px;
+}
 
 .recruitment-contact{
   display: none;
@@ -90,5 +100,6 @@ header{
 .sns-wrap {
   margin-top: 20px;
 }
+
 
 }

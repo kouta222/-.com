@@ -15,6 +15,23 @@
 
          <img src="{{ asset('/css/img/いらなくなった過去問を出品してみよう (2).png') }}" class="waseda-pic"width="1000px" height="200px">
 
+         <!-- 検索ボックス -->
+
+         <form class="row1" method="POST" action="{{ route('products.search')}}">
+               @csrf
+             <div class="col">
+                    <input type="text" name="keyword" input class="form-control kakomon-header-search-input" placeholder="授業名・教授名を検索してみよう！"  >
+              </div>
+
+              <div class="d-grid">
+                     <button type="submit" value="検索" class="btn btn-danger" type="button">検索する</button>
+              </div>
+            
+          </form>
+
+          <hr>
+
+          <!-- スマホの時のみ表示 -->
          <div class="categories"> 
              <h1 class=reproducts>学部一覧</h1> 
             <div class="col-12">
@@ -42,6 +59,7 @@
                    <div> 
               </div>
          </div>
+        <!-- ここからはpc・スマホ共通 -->
 
         <h1>新着商品</h1>
         <div class="row">
@@ -66,7 +84,7 @@
         @endforeach
         </div>
 
-        <!-- レスポンシブデザイン -->
+        <!-- スマホver -->
 
         <div class="row">
         @foreach ($recently_products as $recently_product)

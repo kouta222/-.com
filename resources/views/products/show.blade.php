@@ -1,4 +1,6 @@
+
 @extends('layouts.app')
+
  
  @section('content')
  
@@ -11,7 +13,7 @@
              <img src="{{ asset('img/dummy.png')}}" class="w-100 img-fluid">
              @endif        
          </div>
-         <div class="col">
+         <div class="col-6">
              <div class="d-flex flex-column">
                  <h1 class="">
                      {{$product->name}}・{{$product->genre}}
@@ -54,20 +56,28 @@
                      <div class="col-7">
                          <button type="submit" class="btn samuraimart-submit-button w-100">
                              <i class="fas fa-shopping-cart"></i>
-                             カートに追加
+                             <a class="cartmessage">
+                                  カートに追加
+                              </a>
                          </button>
                      </div>
                      <div class="col-5">
                          @if($product->isFavoritedBy(Auth::user()))
                          <a href="{{ route('products.favorite',$product) }}" class="btn kakomon-favorite-button text-favorite w-100">
                             <i class="fa fa-heart"></i>
-                            お気に入り解除
-                        </a>
+                            <a class="favoritemessage">
+                                 お気に入り解除
+                             </a>
+                          </a>
                         @else
                         <a href="{{ route('products.favorite', $product) }}" class="btn kakomon-favorite-button text-favorite w-100">
                             <i  class="fa fa-heart"></i>
-                            お気に入り
+                            <a class="favoritemessage">
+
+                            お気に入り 
+                            </a>
                         </a>
+
                         @endif
                      </div>
                  </div>
