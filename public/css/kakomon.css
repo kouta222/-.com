@@ -321,10 +321,7 @@ display: inline-block;}
     display: inline-block;
   }
 
-  .col-9 >img {
-    width: 100%; 
-    height: auto; 
-  }
+
 
 
 
@@ -362,20 +359,13 @@ display: inline-block;}
   display: none;
 }
 
-.col{
-  display: block;
-  height: 50px;
-  margin-top: 20px;
-}
+
 
 .d-grid {
   display: block;
  margin-bottom: 30px;
 }
 
-.row1{
-  display: block;
-}
 
 
 

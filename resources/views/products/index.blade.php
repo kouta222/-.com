@@ -1,7 +1,3 @@
-<head>   
-  <link rel="stylesheet" href="{{ asset('/css/button.css') }}">
-</head>
-
 @extends('layouts.app')
  
  @section('content')
@@ -20,7 +16,7 @@
                  <h1>{{ $category->name }}の商品一覧{{$total_count}}件</h1>
              @endif
          </div>
-         <div>
+        <div>
             
             @sortablelink('price','値段順に並び替える')
         </div>
@@ -48,9 +44,10 @@
                  </div>
                </div>
                  @endforeach
-             </div>
+            </div>
          </div>
          {{ $products->appends(request()->query())->links() }}
      </div>
  </div>
+</div>
  @endsection
