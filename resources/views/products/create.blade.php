@@ -3,23 +3,32 @@
  @section('content')
  <div class="container">
      <h1>新しい商品を追加</h1>
-     <form action="{{ route('products.store') }}" method="POST">
+     <form action="{{ route('products.store') }}" method="POST"  enctype="multipart/form-data">
      @csrf
-     <form action="#" enctype='#' method=""> 
-        <input type="file" name="image">  
-        </form>
+           <div class="item-image-form image-picker">
+                <input type="file" name="image" class="d-none" accept="image/png,image/jpeg,image/gif" id="item-image" />
+                     <label for="item-image" class="d-inline-block" role="button">
+                          <img src="{{asset('/img/dummy_img.png') }}" style="object-fit: cover; width: 300px; height: 200px;">
+                      </label>
+         </div>
+                    @error('item-image')
+                        <div style="color: #E4342E;" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </div>
+                    @enderror
     
          <div class="form-group">
              <label for="product-name">商品名</label>
-             <input type="text" name="name" id="product-name" class="form-control">
+             <input type="text" name="name" id="product-name" class="form-control" placeholder="哲学概論など略さずに記入してください。">
+         </div>
+
+         <div class="form-group">
+             <label for="product-description" >商品説明</label>
+             <textarea name="description" id="product-description" class="form-control" placeholde="例）全１２回講義のノートです。"></textarea>
          </div>
          <div class="form-group">
-             <label for="product-description">商品説明</label>
-             <textarea name="description" id="product-description" class="form-control"></textarea>
-         </div>
-         <div class="form-group">
-             <label for="product-price">価格</label>
-             <input type="number" name="price" id="product-price" class="form-control">
+             <label for="product-price" >価格</label>
+             <input type="number" name="price" id="product-price" class="form-control" placeholder="目安は３００～７００円です。">
          </div>
          <div class="form-group">
              <label for="product-category">学部</label>

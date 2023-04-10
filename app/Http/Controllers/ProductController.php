@@ -66,6 +66,7 @@ class ProductController extends Controller
         $product->semester = $request->input('semester');
         $product->teacher = $request->input('teacher');
         $product->genre = $request->input('genre');
+        $product->image = $request->input('image');
 
         $product->save();
 
@@ -114,6 +115,7 @@ class ProductController extends Controller
         $product->semester = $request->input('semester');
         $product->teacher = $request->input('teacher');
         $product->genre = $request->input('genre');
+        $product->image = $request->input('image');
         $product->update();
 
         return to_route('products.index');

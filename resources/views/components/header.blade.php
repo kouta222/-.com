@@ -86,7 +86,7 @@
                            </li>
 
                           <li class="nav-item mr-5">
-                                <button type="button" class="btn btn-danger" href="{{ route('products.create') }}">出品する</button>
+                                <a class="btn btn-danger"  button type="button" href="{{ route('products.create') }}">出品する</button>
                                   </a>
                             </li>
 

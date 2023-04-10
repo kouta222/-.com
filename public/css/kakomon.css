@@ -278,13 +278,8 @@ footer {
 .picpic {
 display: inline-block;}
 
-.col-3 {
-  display: inline-block;
-} 
 
-.col-4 {
-  display: none;
-}
+
 
 .carouselExampleCaptions{
   width: auto;
@@ -331,9 +326,7 @@ display: inline-block;}
     height: auto; 
   }
 
-  .col-3 {
-    display: none;
-  }
+
 
   .reproducts {
     color: #000000;
@@ -387,9 +380,7 @@ display: inline-block;}
 }
 
 
-.col-4 {
-  display: inline-block;
-}
+
 
 /* header */
 .divdiv  {
