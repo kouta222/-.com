@@ -13,13 +13,19 @@
                  <h1>{{ $category->name }}の商品一覧{{$total_count}}件</h1>
              @endif
          </div>
-        <div class="container mt-4">
+         <div>
+            
+            @sortablelink('price','値段順に並び替える')
+        </div>        <div class="container mt-4">
             <div class="row w-100">
                 @foreach($products as $product)
                 <div class="col-3">
                     <a href="{{route('products.show', $product)}}">
-                        <img src="{{ asset('img/dummy.png')}}" class="img-thumbnail">
-                    </a>
+                    @if ($product->image !=="")
+                        <img src="{{ asset($product->image) }}" class="img-thumbnail">
+                        @else
+                        <img src="{{ asset('img/dummu.png')}}" class="img-thumbnail">
+                        @endif                    </a>
                     <div class="row">
                         <div class="col-12">
                             <p class="samuraimart-product-label mt-2">
