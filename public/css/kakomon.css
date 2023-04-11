@@ -228,6 +228,11 @@ footer {
   height: 300px;
 }
 
+.col-9 >img {
+  width: 100%; 
+  height: auto; 
+}
+
 
 
 
@@ -278,7 +283,13 @@ footer {
 .picpic {
 display: inline-block;}
 
+.PC {
+  display: inline-block;
+}
 
+.rowphone {
+  display: none;
+}
 
 
 .carouselExampleCaptions{
@@ -359,7 +370,11 @@ display: inline-block;}
   display: none;
 }
 
-
+.col{
+  display: block;
+  height: 50px;
+  margin-top: 20px;
+}
 
 .d-grid {
   display: block;
@@ -367,6 +382,17 @@ display: inline-block;}
 }
 
 
+.row1{
+  display: block;
+}
+
+.PC {
+  display: none;
+}
+
+.rowphone {
+  display: inline-block;
+}
 
 
 

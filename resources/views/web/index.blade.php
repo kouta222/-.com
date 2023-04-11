@@ -62,8 +62,9 @@
         <!-- ここからはpc・スマホ共通 -->
 
         <h1>新着商品</h1>
+    <div class="PC">
         <div class="row">
-        @foreach ($recently_products as $recently_product)
+          @foreach ($recently_products as $recently_product)
             <div class="col-3">
                 <a href="{{ route('products.show', $recently_product) }}">
                     @if ($recently_product->image !== "")
@@ -83,11 +84,12 @@
             </div>
         @endforeach
         </div>
+    </div>
 
         <!-- スマホver -->
-
+     <div class="rowphone">
         <div class="row">
-        @foreach ($recently_products as $recently_product)
+          @foreach ($recently_products as $recently_product)
             <div class="col-4">
                 <a href="{{ route('products.show', $recently_product) }}">
                     @if ($recently_product->image !== "")
@@ -104,9 +106,12 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            
+         </div>
         @endforeach
         </div>
+   </div>
+
 
         <!-- レスポンシブデザイン終り -->
 
