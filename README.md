@@ -8,7 +8,7 @@
 大学の期末テストの過去問・ノートを売買できるフリマアプリです。<br>
 ![トップページ](https://github.com/kouta222/-.com/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-04-02%20224706.png)
 
-URL：：https://kakomon258.herokuapp.com/　　
+URL：：https://kakomon258.herokuapp.com/　
 
 <br>
 ヘッダーにあるゲストログインを押せば、会員登録なしでもログインが可能です。<br>
