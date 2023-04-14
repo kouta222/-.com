@@ -53,6 +53,18 @@
          </div>
  
          <hr>
+          <hr>
+ 
+         <div class="offset-8 col-4">
+             <div class="row">
+                 <div class="col-6">
+                     <h2>送料</h2>
+                 </div>
+                 <div class="col-6">
+                     <h2>￥{{ $carriage_cost }}</h2>
+                 </div>
+             </div>
+         </div>
  
          <div class="offset-8 col-4">
              <div class="row">

@@ -22,10 +22,11 @@
                 <div class="col-3">
                     <a href="{{route('products.show', $product)}}">
                     @if ($product->image !=="")
-                        <img src="{{ asset($product->image) }}" class="img-thumbnail">
+                    <img src="{{ asset('storage/products/' . $product->image) }}" alt="{{ $product->name }}">
                         @else
-                        <img src="{{ asset('img/dummu.png')}}" class="img-thumbnail">
-                        @endif                    </a>
+                        <img src="{{ asset('/img/kakomon.com (3).png') }}" class="img-thumbnail">
+                        @endif                    
+                    </a>
                     <div class="row">
                         <div class="col-12">
                             <p class="samuraimart-product-label mt-2">

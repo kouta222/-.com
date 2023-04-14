@@ -4,7 +4,7 @@
  <div class="container">
      <h1>新しい商品を追加</h1>
      <form action="{{ route('products.store') }}" method="POST"  enctype="multipart/form-data">
-     @csrf
+          @csrf
            <div class="item-image-form image-picker">
                 <input type="file" name="image" class="d-none" accept="image/png,image/jpeg,image/gif" id="item-image" />
                      <label for="item-image" class="d-inline-block" role="button">

@@ -41,6 +41,10 @@ Route::controller(UserController::class)->group(function () {
     Route::get('users/mypage/favorite','favorite')->name('mypage.favorite'); 
     Route::get('users/mypage/register_card', 'register_card')->name('mypage.register_card');
     Route::post('users/mypage/token', 'token')->name('mypage.token');
+    Route::delete('users/mypage/delete', 'destroy')->name('mypage.destroy');
+    Route::get('users/mypage/cart_history', 'cart_history_index')->name('mypage.cart_history');
+    Route::get('users/mypage/cart_history/{num}', 'cart_history_show')->name('mypage.cart_history_show');
+
 });
 
 

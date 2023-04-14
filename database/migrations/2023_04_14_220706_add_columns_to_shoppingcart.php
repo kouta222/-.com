@@ -13,8 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('token')->default('');
+        Schema::table('shoppingcart', function (Blueprint $table) {
+            $table->string('code')->default("");
+            $table->integer('price_total')->unsigned()->default(0);
+            $table->integer('qty')->unsigned()->default(0);
         });
     }
 
@@ -25,7 +27,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
+        Schema::table('shoppingcart', function (Blueprint $table) {
             //
         });
     }

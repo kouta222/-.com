@@ -8,6 +8,16 @@ use App\Http\Controllers\ReviewController;
 use Encore\Admin\Grid\Filter\Like;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Intervention\Image\Facades\Image;
+use Illuminate\Http\File;
+use Illuminate\Http\UploadedFile;
+  use Illuminate\Support\Facades\Storage;
+
+
+
+
+
+
 
 class ProductController extends Controller
 {
@@ -57,6 +67,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+    
         $product = new Product();
         $product->name = $request->input('name');
         $product->description = $request->input('description');
@@ -66,8 +77,12 @@ class ProductController extends Controller
         $product->semester = $request->input('semester');
         $product->teacher = $request->input('teacher');
         $product->genre = $request->input('genre');
-        $product->image = $request->input('image');
-
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $path = $file->storeAs('public/products', $filename);
+            $product->image = $filename;
+        }
         $product->save();
 
         return to_route('products.index');
