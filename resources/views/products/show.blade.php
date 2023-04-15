@@ -58,26 +58,22 @@
                      <div class="col-7">
                          <button type="submit" class="btn samuraimart-submit-button w-100">
                              <i class="fas fa-shopping-cart"></i>
-                             <a class="cartmessage">
-                                  カートに追加
-                              </a>
+                         
                          </button>
                      </div>
                      <div class="col-5">
                          @if($product->isFavoritedBy(Auth::user()))
                          <a href="{{ route('products.favorite',$product) }}" class="btn kakomon-favorite-button text-favorite w-100">
                             <i class="fa fa-heart"></i>
-                            <a class="favoritemessage">
-                                 お気に入り解除
-                             </a>
+                           
                           </a>
                         @else
                         <a href="{{ route('products.favorite', $product) }}" class="btn kakomon-favorite-button text-favorite w-100">
                             <i  class="fa fa-heart"></i>
-                            <a class="favoritemessage">
 
-                            お気に入り 
-                            </a>
+
+                            
+                            
                         </a>
 
                         @endif
