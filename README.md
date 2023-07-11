@@ -64,7 +64,7 @@ PHPunit<br><br>
 
 ## 今後行うこと
 マルチログインを搭載する予定です。<br>
-またdocker,AWSに移行中です。
+またdocker,AWS EC2/AWS CodePipelineに移行中です。
 
 JAVAを学習していき、新しいアプリを作りたいです。
 
